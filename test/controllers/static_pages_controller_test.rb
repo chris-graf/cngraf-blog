@@ -12,5 +12,4 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
     assert_select "title", "The Blog of Chris Graf | Projects"
   end
-
 end
