@@ -4,11 +4,61 @@
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <!-- Google fonts and font effects -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic|Merriweather:400,300italic,700&effect=outline' rel='stylesheet' type='text/css'>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
+  <div class="link-array">
+    <div class="img-box">
+      <a href="#">
+          <img src="imgs/coffee-small.png" />
+          <div class="font-effect-outline">
+            <h1>About</h1>
+          </div>
+      </a>
+    </div>
+
+    <div class="img-box">
+      <a href="#">
+          <img src="imgs/typewriter-small.png" />
+          <div class="font-effect-outline">
+            <h1>Blog</h1>
+          </div>
+      </a>
+    </div>
+
+    <div class="img-box">
+      <a href=#>
+          <img src="imgs/engines.png" />
+          <div class="font-effect-outline">
+            <h1>Projects</h1>
+          </div>
+      </a>
+    </div>
+
+    <div class="img-box">
+      <a href=#>
+          <img src="imgs/news-small.png" />
+          <div class="font-effect-outline">
+            <h1>Media</h1>
+          </div>
+      </a
+>      </div>
+
+    <div class="img-box">
+      <a href=#>
+          <img src="imgs/rotary-small.png" />
+          <div class="font-effect-outline">
+            <h1>Contact</h1>
+          </div>
+       </a>
+    </div>
+  </div>
 
 </body>
 </html>
